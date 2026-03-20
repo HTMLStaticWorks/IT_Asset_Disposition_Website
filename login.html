@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Login | ITAD Core</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-surface">
+    <div class="auth-wrapper">
+        <div class="auth-card fade-up">
+            <div class="text-center mb-4">
+                <a href="index.html" class="navbar-brand d-inline-flex justify-content-center w-100 mb-3" style="font-size: 2rem;">
+                    <i class="bi bi-shield-lock-fill"></i> ITAD Core
+                </a>
+                <h2 class="h4">Client Portal Login</h2>
+                <p class="text-muted">Access your tracking reports and certificates of destruction.</p>
+            </div>
+            <form onsubmit="event.preventDefault();">
+                <div class="mb-3">
+                    <label class="form-label text-muted fw-bold d-block mb-1">Corporate Email</label>
+                    <input type="email" class="form-control" placeholder="name@company.com" required>
+                </div>
+                <div class="mb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-1">
+                        <label class="form-label text-muted fw-bold mb-0">Password</label>
+                        <a href="#" class="text-accent" style="font-size: 0.85rem;">Forgot password?</a>
+                    </div>
+                    <input type="password" class="form-control" placeholder="••••••••" required>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 fs-6 py-3">Secure Login</button>
+            </form>
+            <div class="text-center mt-4 text-muted">
+                Need portal access? <a href="signup.html" class="text-accent fw-bold">Request an account</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="fixed-bottom p-3 d-flex justify-content-between align-items-center bg-transparent">
+        <a href="index.html" class="text-muted text-decoration-none"><i class="bi bi-arrow-left"></i> Back to Site</a>
+        <button id="theme-toggle" class="btn btn-outline border-0 bg-transparent text-muted" aria-label="Toggle Theme">
+            <i class="bi bi-moon"></i>
+        </button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="assets/js/theme-toggle.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            gsap.from(".auth-card", {y: 30, opacity: 0, duration: 0.8, ease: "power2.out"});
+        });
+    </script>
+</body>
+</html>
