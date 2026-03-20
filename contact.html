@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us | ITAD Core</title>
@@ -14,11 +15,35 @@
             <a href="index.html" class="navbar-brand">
                 <i class="bi bi-shield-lock-fill"></i> ITAD Core
             </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+            <button id="mobile-menu-btn" class="d-none" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="bi bi-chevron-down ms-1" style="font-size:0.8rem;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html"><i class="bi bi-clipboard-data"></i> Dashboard</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 20px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Sign Up</a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -36,34 +61,43 @@
                     <div class="card p-5 h-100 border-0 shadow-sm text-center text-lg-start">
                         <h2 class="mb-4">Global Headquarters</h2>
                         <ul class="list-unstyled">
-                            <li class="mb-4 d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
-                                <div class="bg-primary text-white rounded p-3 d-inline-block">
+                            <li class="mb-4 d-flex align-items-start justify-content-start gap-3">
+                                <div class="bg-primary text-white rounded p-3 d-flex align-items-center justify-content-center" style="width:55px; height:55px; flex-shrink: 0;">
                                     <i class="bi bi-geo-alt fs-4 mb-0"></i>
                                 </div>
-                                <div class="text-start">
-                                    <span class="d-block text-muted">Address</span>
-                                    <strong class="text-primary" style="font-family:var(--font-heading)">400 Security Way<br>Enterprise City, ST 90210</strong>
+                                <div class="text-start pt-1">
+                                    <span class="d-block text-muted" style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Address</span>
+                                    <strong class="text-primary d-block mt-1" style="font-family:var(--font-heading); line-height: 1.4;">400 Security Way<br>Silicon Valley, CA 94025</strong>
                                 </div>
                             </li>
-                            <li class="mb-4 d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
-                                <div class="bg-primary text-white rounded p-3 d-inline-block">
+                            <li class="mb-4 d-flex align-items-start justify-content-start gap-3">
+                                <div class="bg-primary text-white rounded p-3 d-flex align-items-center justify-content-center" style="width:55px; height:55px; flex-shrink: 0;">
                                     <i class="bi bi-telephone fs-4 mb-0"></i>
                                 </div>
-                                <div class="text-start">
-                                    <span class="d-block text-muted">Phone (24/7 Support)</span>
-                                    <strong class="text-primary" style="font-family:var(--font-heading)">1-800-SECURE-IT</strong>
+                                <div class="text-start pt-1">
+                                    <span class="d-block text-muted" style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Phone (24/7 Support)</span>
+                                    <strong class="text-primary d-block mt-1" style="font-family:var(--font-heading); line-height: 1.4;">1-800-SECURE-IT</strong>
                                 </div>
                             </li>
-                            <li class="mb-4 d-flex align-items-center justify-content-center justify-content-lg-start gap-3">
-                                <div class="bg-primary text-white rounded p-3 d-inline-block">
+                            <li class="mb-4 d-flex align-items-start justify-content-start gap-3">
+                                <div class="bg-primary text-white rounded p-3 d-flex align-items-center justify-content-center" style="width:55px; height:55px; flex-shrink: 0;">
                                     <i class="bi bi-envelope fs-4 mb-0"></i>
                                 </div>
-                                <div class="text-start">
-                                    <span class="d-block text-muted">Email</span>
-                                    <strong class="text-primary" style="font-family:var(--font-heading)">certifications@itadcore.com</strong>
+                                <div class="text-start pt-1">
+                                    <span class="d-block text-muted" style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px;">Email</span>
+                                    <strong class="text-primary d-block mt-1" style="font-family:var(--font-heading); line-height: 1.4;">certifications@itadcore.com</strong>
                                 </div>
                             </li>
                         </ul>
+                        
+                        <div class="mt-5 pt-4 border-top text-center">
+                            <h4 class="mb-3" style="font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--text-primary);">Connect With Us</h4>
+                            <div class="d-flex gap-3 justify-content-center social-icons">
+                                <a href="#" class="social-icon linkedin" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                                <a href="#" class="social-icon facebook" title="Facebook"><i class="bi bi-facebook"></i></a>
+                                <a href="#" class="social-icon instagram" title="Instagram"><i class="bi bi-instagram"></i></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-7 fade-up">
@@ -111,9 +145,62 @@
         </div>
     </section>
 
+    <!-- Map Section -->
+    <section class="section-padding pt-0">
+        <div class="container fade-up">
+            <div class="rounded-4 overflow-hidden shadow-lg border" style="height: 450px;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101408.21773199893!2d-122.126588!3d37.41094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb07b9df1c54d%3A0xf41a0279ce8aa82a!2sSilicon%20Valley%2C%20CA!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
-        <div class="container text-center">
-            <p class="text-white-50">&copy; 2026 ITAD Core. All rights reserved.</p>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="navbar-brand text-white mb-3 d-inline-block">
+                        <i class="bi bi-shield-lock-fill"></i> ITAD Core
+                    </a>
+                    <p class="text-white-50 mt-3 pe-4">Global leader in secure enterprise IT asset disposition, data
+                        destruction, and compliance-driven electronic recycling.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-data-destruction.html">Data Destruction</a></li>
+                        <li><a href="service-value-recovery.html">Value Recovery</a></li>
+                        <li><a href="service-ewaste-recycling.html">e-Waste Recycling</a></li>
+                        <li><a href="service-decommissioning.html">Decommissioning</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>Newsletter</h4>
+                    <p class="text-white-50">Stay up to date with compliance changes.</p>
+                    <form class="d-flex gap-2 mt-3" onsubmit="event.preventDefault();">
+                        <input type="email" class="form-control mb-0" placeholder="Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-white-50">
+                <p>&copy; 2026 ITAD Core. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 

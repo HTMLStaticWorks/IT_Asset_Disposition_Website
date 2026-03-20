@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ITAD Core | Data Center Decommissioning</title>
@@ -15,27 +16,34 @@
             <a href="index.html" class="navbar-brand">
                 <i class="bi bi-shield-lock-fill"></i> ITAD Core
             </a>
-            <ul class="nav-links">
-                <li class="dropdown">
-                    <a href="index.html">Home <i class="bi bi-chevron-down ms-1" style="font-size:0.8rem;"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="index.html">Home 1</a></li>
-                        <li><a href="home-2.html">Home 2</a></li>
-                    </ul>
-                </li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="industries.html">Industries</a></li>
-                <li><a href="process.html">Process</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button id="theme-toggle" aria-label="Toggle Theme">
-                    <i class="bi bi-moon"></i>
-                </button>
-                <a href="login.html" class="btn btn-outline" style="padding: 8px 20px;">Login</a>
-                <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Sign Up</a>
+
+            <button id="mobile-menu-btn" class="d-none" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="bi bi-chevron-down ms-1" style="font-size:0.8rem;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html"><i class="bi bi-clipboard-data"></i> Dashboard</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 20px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Sign Up</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -71,8 +79,88 @@
                     <a href="service-details.html" class="btn btn-primary">Learn More</a>
                 </div>
                 <div class="col-lg-6 mt-5 mt-lg-0 fade-up">
-                    <img src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=800" alt="Secure Transport" class="img-fluid rounded shadow">
+                    <img src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=800" alt="Secure Transport" class="img-fluid rounded shadow" style="width: 100%; max-width: 450px; height: 350px; object-fit: cover; margin: 0 auto; display: block;">
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialized Engineering -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center flex-row-reverse">
+                <div class="col-lg-6 fade-up">
+                    <h2 class="mb-4">Specialized Engineering Teams</h2>
+                    <p class="text-muted mb-4">Our on-site field engineers are certified and explicitly trained to handle live data center environments, guaranteeing absolute zero disruption to your active operations.</p>
+                    <ul class="list-unstyled mb-4 text-muted">
+                        <li class="mb-2"><i class="bi bi-person-check-fill text-accent me-2"></i> Thoroughly Background-Checked Personnel</li>
+                        <li class="mb-2"><i class="bi bi-tools text-accent me-2"></i> Custom De-raking and Server Extraction</li>
+                        <li class="mb-2"><i class="bi bi-clock-history text-accent me-2"></i> Strict Adherence to Maintenance Windows</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 fade-up">
+                    <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&q=80&w=800" alt="Engineers in Data Center" class="img-fluid rounded shadow" style="width: 100%; max-width: 450px; height: 350px; object-fit: cover; margin: 0 auto; display: block;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Data Erasure -->
+    <section class="section-padding bg-surface">
+        <div class="container text-center fade-up">
+            <h2 class="mb-4">Data Erasure at Scale</h2>
+            <p class="text-muted mx-auto mb-5" style="max-width: 600px;">Hyper-scale operations require hyper-scale wiping capabilities. We can concurrently erase thousands of drives while verifying NIST 800-88 compliance.</p>
+            <div class="row g-4 stagger-cards">
+                <div class="col-md-4 stagger-item fade-up">
+                    <div class="glass-panel p-4 h-100 text-start">
+                        <i class="bi bi-shield-check text-accent fs-1 mb-3"></i>
+                        <h4>On-Site Eradication</h4>
+                        <p class="text-muted" style="font-size:0.9rem;">Wiping infrastructure deployed directly to your racks before drives ever leave the premises.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 stagger-item fade-up">
+                    <div class="glass-panel p-4 h-100 text-start">
+                        <i class="bi bi-cpu text-accent fs-1 mb-3"></i>
+                        <h4>SSD Micro-Shredding</h4>
+                        <p class="text-muted" style="font-size:0.9rem;">2mm shredding guarantees complete destruction of all modern NAND flash density variants.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 stagger-item fade-up">
+                    <div class="glass-panel p-4 h-100 text-start">
+                        <i class="bi bi-file-earmark-lock text-accent fs-1 mb-3"></i>
+                        <h4>Serialized Certs</h4>
+                        <p class="text-muted" style="font-size:0.9rem;">Hardened audit logs and individual certificates generated for every single serial number.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Recovery -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-up">
+                    <h2 class="mb-4">Maximizing Value Recovery</h2>
+                    <p class="text-muted mb-4">Enterprise servers, blade enclosures, and networking gear hold significant secondary market value. Our global network ensures you recover maximum ROI to offset decommissioning costs.</p>
+                    <a href="service-details.html" class="btn btn-primary mt-2">Explore Revenue Share Programs</a>
+                </div>
+                <div class="col-lg-6 mt-5 mt-lg-0 fade-up">
+                    <img src="https://images.unsplash.com/photo-1542744094-3a31f272c490?auto=format&fit=crop&q=80&w=800" alt="ROI Graph" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Preview -->
+    <section class="section-padding bg-surface">
+        <div class="container text-center fade-up">
+            <h2 class="mb-4">Proven Hyper-Scale Success</h2>
+            <p class="text-muted mx-auto mb-5" style="max-width: 600px;">We've safely decommissioned millions of square feet of enterprise data centers globally.</p>
+            <div class="glass-panel p-5 mx-auto" style="max-width: 800px;">
+                <h3 class="mb-3">FinTech Global Bank Decom</h3>
+                <p class="text-muted mb-4">Retired 25,000 active nodes over a single holiday weekend flawlessly, securing all PII and generating heavy ROI.</p>
+                <a href="case-studies.html" class="btn btn-outline">Read The Case Study</a>
             </div>
         </div>
     </section>
@@ -85,19 +173,29 @@
                     <a href="index.html" class="navbar-brand text-white mb-3 d-inline-block">
                         <i class="bi bi-shield-lock-fill"></i> ITAD Core
                     </a>
-                    <p class="text-white-50 mt-3 pe-4">Global leader in secure enterprise IT asset disposition, data destruction, and compliance-driven electronic recycling.</p>
+                    <p class="text-white-50 mt-3 pe-4">Global leader in secure enterprise IT asset disposition, data
+                        destruction, and compliance-driven electronic recycling.</p>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-2 col-md-4">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-data-destruction.html">Data Destruction</a></li>
+                        <li><a href="service-value-recovery.html">Value Recovery</a></li>
+                        <li><a href="service-ewaste-recycling.html">e-Waste Recycling</a></li>
+                        <li><a href="service-decommissioning.html">Decommissioning</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
                     <h4>Resources</h4>
                     <ul class="footer-links">
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="case-studies.html">Case Studies</a></li>
                         <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-4">
                     <h4>Newsletter</h4>
+                    <p class="text-white-50">Stay up to date with compliance changes.</p>
                     <form class="d-flex gap-2 mt-3" onsubmit="event.preventDefault();">
                         <input type="email" class="form-control mb-0" placeholder="Email Address" required>
                         <button type="submit" class="btn btn-primary">Subscribe</button>

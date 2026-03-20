@@ -1,6 +1,8 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog | ITAD Core</title>
@@ -8,27 +10,50 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="container navbar-container">
             <a href="index.html" class="navbar-brand">
                 <i class="bi bi-shield-lock-fill"></i> ITAD Core
             </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="process.html">Process</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+            <button id="mobile-menu-btn" class="d-none" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="bi bi-chevron-down ms-1" style="font-size:0.8rem;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html"><i class="bi bi-clipboard-data"></i> Dashboard</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 20px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Sign Up</a>
+                </div>
+            </div>
         </div>
     </nav>
 
     <div class="page-header">
         <div class="container fade-up">
             <h1 class="section-title">Industry Insights</h1>
-            <p class="text-muted mx-auto mt-3" style="max-width: 600px;">Updates on compliance, data security standards, and evolving ITAD best practices.</p>
+            <p class="text-muted mx-auto mt-3" style="max-width: 600px;">Updates on compliance, data security standards,
+                and evolving ITAD best practices.</p>
         </div>
     </div>
 
@@ -37,34 +62,94 @@
             <div class="row g-4 stagger-cards">
                 <div class="col-lg-4 col-md-6">
                     <div class="card p-0 overflow-hidden h-100 stagger-item">
-                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800" class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;" alt="Blog Image" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;" alt="Blog Image"
+                            loading="lazy">
                         <div class="p-4">
                             <span class="text-muted d-block mb-2" style="font-size: 0.9rem;">October 15, 2026</span>
                             <h3 class="card-title">Navigating Changes in Data Privacy Laws</h3>
-                            <p class="text-muted mb-4">A complete overview of the emerging global data privacy frameworks and how your ITAD strategy should adapt.</p>
-                            <a href="blog-details.html" class="fw-bold">Read Article <i class="bi bi-arrow-right"></i></a>
+                            <p class="text-muted mb-4">A complete overview of the emerging global data privacy
+                                frameworks and how your ITAD strategy should adapt.</p>
+                            <a href="blog-details-navigating-changes.html" class="fw-bold">Read Article <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card p-0 overflow-hidden h-100 stagger-item">
-                        <img src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=800" class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;" alt="Blog Image" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1620288627223-53302f4e8c74?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;" alt="Blog Image"
+                            loading="lazy">
                         <div class="p-4">
                             <span class="text-muted d-block mb-2" style="font-size: 0.9rem;">September 28, 2026</span>
                             <h3 class="card-title">Maximizing Value in Data Center Decoms</h3>
-                            <p class="text-muted mb-4">To recover maximum ROI, organizations must carefully plan the timing of secondary market releases.</p>
-                            <a href="blog-details.html" class="fw-bold">Read Article <i class="bi bi-arrow-right"></i></a>
+                            <p class="text-muted mb-4">To recover maximum ROI, organizations must carefully plan the
+                                timing of secondary market releases.</p>
+                            <a href="blog-details-maximizing-value.html" class="fw-bold">Read Article <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <div class="card p-0 overflow-hidden h-100 stagger-item">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;" alt="Blog Image" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;" alt="Blog Image"
+                            loading="lazy">
                         <div class="p-4">
                             <span class="text-muted d-block mb-2" style="font-size: 0.9rem;">August 10, 2026</span>
                             <h3 class="card-title">Solid State Drive Destruction Standards</h3>
-                            <p class="text-muted mb-4">Why traditional hard drive shredding machines aren't sufficient for modern SSD structural destruction.</p>
-                            <a href="blog-details.html" class="fw-bold">Read Article <i class="bi bi-arrow-right"></i></a>
+                            <p class="text-muted mb-4">Why traditional hard drive shredding machines aren't sufficient
+                                for modern SSD structural destruction.</p>
+                            <a href="blog-details-ssd-destruction.html" class="fw-bold">Read Article <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-0 overflow-hidden h-100 stagger-item">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;" alt="Blog Image"
+                            loading="lazy">
+                        <div class="p-4">
+                            <span class="text-muted d-block mb-2" style="font-size: 0.9rem;">July 12, 2026</span>
+                            <h3 class="card-title">Securing Chain of Custody</h3>
+                            <p class="text-muted mb-4">Best practices for securely tracking decommissioned assets from
+                                facility departure to final disposition.</p>
+                            <a href="blog-details-chain-of-custody.html" class="fw-bold">Read Article <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-0 overflow-hidden h-100 stagger-item">
+                        <img src="https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;" alt="Blog Image"
+                            loading="lazy">
+                        <div class="p-4">
+                            <span class="text-muted d-block mb-2" style="font-size: 0.9rem;">June 05, 2026</span>
+                            <h3 class="card-title">Circular Economy in Enterprise IT</h3>
+                            <p class="text-muted mb-4">How extending the hardware lifecycle reduces carbon footprint
+                                whilst yielding significant ROI in economy.</p>
+                            <a href="blog-details-circular-economy.html" class="fw-bold">Read Article <i
+                                    class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card p-0 overflow-hidden h-100 stagger-item">
+                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&q=80&w=800"
+                            class="img-fluid" style="height: 200px; width: 100%; object-fit: cover;" alt="Blog Image"
+                            loading="lazy">
+                        <div class="p-4">
+                            <span class="text-muted d-block mb-2" style="font-size: 0.9rem;">May 20, 2026</span>
+                            <h3 class="card-title">Preparing for a Server Migration</h3>
+                            <p class="text-muted mb-4">A secure decommissioning checklist for smoothly migrating or
+                                retiring hyper-scale environments.</p>
+                            <a href="blog-details-server-migration.html" class="fw-bold">Read Article <i
+                                    class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -74,7 +159,43 @@
 
     <footer class="footer">
         <div class="container">
-            <p class="text-white-50">&copy; 2026 ITAD Core.</p>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="navbar-brand text-white mb-3 d-inline-block">
+                        <i class="bi bi-shield-lock-fill"></i> ITAD Core
+                    </a>
+                    <p class="text-white-50 mt-3 pe-4">Global leader in secure enterprise IT asset disposition, data
+                        destruction, and compliance-driven electronic recycling.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-data-destruction.html">Data Destruction</a></li>
+                        <li><a href="service-value-recovery.html">Value Recovery</a></li>
+                        <li><a href="service-ewaste-recycling.html">e-Waste Recycling</a></li>
+                        <li><a href="service-decommissioning.html">Decommissioning</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>Newsletter</h4>
+                    <p class="text-white-50">Stay up to date with compliance changes.</p>
+                    <form class="d-flex gap-2 mt-3" onsubmit="event.preventDefault();">
+                        <input type="email" class="form-control mb-0" placeholder="Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-white-50">
+                <p>&copy; 2026 ITAD Core. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
@@ -84,4 +205,5 @@
     <script src="assets/js/animations.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

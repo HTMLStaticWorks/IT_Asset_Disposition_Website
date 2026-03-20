@@ -4,10 +4,14 @@
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Studies | ITAD Core</title>
+    <title>Blog Details | ITAD Core</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap-grid.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .blog-content p { color: var(--text-muted); font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.8; }
+        .blog-content h2 { color: var(--text-primary); margin-top: 2rem; margin-bottom: 1rem; }
+    </style>
 </head>
 <body>
     <nav class="navbar">
@@ -47,58 +51,36 @@
         </div>
     </nav>
 
-    <div class="page-header">
+    <div class="page-header" style="padding-bottom: 40px;">
         <div class="container fade-up">
-            <h1 class="section-title">Case Studies</h1>
-            <p class="text-muted mx-auto mt-3" style="max-width: 600px;">Proven results across complex enterprise decommissioning scenarios.</p>
+            <span class="text-accent fw-bold d-block mb-3">Data Security</span>
+            <h1 class="section-title mx-auto" style="max-width: 800px;">Solid State Drive Destruction Standards</h1>
+            <div class="d-flex justify-content-center gap-4 mt-4 text-muted">
+                <span><i class="bi bi-calendar3"></i> Aug 10, 2026</span>
+                <span><i class="bi bi-person-fill"></i> ITAD Compliance Team</span>
+            </div>
         </div>
     </div>
 
-    <section class="section-padding">
+    <section class="section-padding pt-0">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-6 fade-up">
-                    <div class="card p-0 overflow-hidden h-100">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;" alt="Global Financial Institution" loading="lazy">
-                        <div class="p-4">
-                            <span class="text-accent fw-bold d-block mb-2">Finance</span>
-                            <h3 class="card-title">Securing 50,000+ Assets for an International Bank</h3>
-                            <p class="text-muted mb-4">Complete decommissioning of two major data centers with zero downtime and strict adherence to GLBA compliance.</p>
-                            <a href="#" class="fw-bold"><i class="bi bi-download"></i> Download PDF Study</a>
-                        </div>
-                    </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 fade-up text-center mb-5">
+                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200" class="img-fluid rounded shadow-lg" alt="Security Laws">
                 </div>
-                <div class="col-lg-6 fade-up">
-                    <div class="card p-0 overflow-hidden h-100">
-                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&q=80&w=800" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;" alt="Healthcare Network" loading="lazy">
-                        <div class="p-4">
-                            <span class="text-accent fw-bold d-block mb-2">Healthcare</span>
-                            <h3 class="card-title">HIPAA-Compliant Refresh Cycle Across 40 Hospitals</h3>
-                            <p class="text-muted mb-4">Secure mobile shredding deployed to execute continuous tech refreshes while actively managing ePHI destruction on-site.</p>
-                            <a href="#" class="fw-bold"><i class="bi bi-download"></i> Download PDF Study</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-up">
-                    <div class="card p-0 overflow-hidden h-100">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;" alt="Data Center Decommissioning" loading="lazy">
-                        <div class="p-4">
-                            <span class="text-accent fw-bold d-block mb-2">Cloud Infrastructure</span>
-                            <h3 class="card-title">Hyper-Scale Data Center Decommissioning</h3>
-                            <p class="text-muted mb-4">Efficient removal and secure wiping of 15,000+ drives within a strict 48-hour window, yielding 30% higher ROI.</p>
-                            <a href="#" class="fw-bold"><i class="bi bi-download"></i> Download PDF Study</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 fade-up">
-                    <div class="card p-0 overflow-hidden h-100">
-                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=800" class="img-fluid" style="height: 250px; width: 100%; object-fit: cover;" alt="Government Facility" loading="lazy">
-                        <div class="p-4">
-                            <span class="text-accent fw-bold d-block mb-2">Public Sector</span>
-                            <h3 class="card-title">NIST 800-88 Compliant Asset Retirement</h3>
-                            <p class="text-muted mb-4">Comprehensive on-site physical shredding of classified SSDs and magnetic media across 12 federal agencies.</p>
-                            <a href="#" class="fw-bold"><i class="bi bi-download"></i> Download PDF Study</a>
-                        </div>
+                <div class="col-lg-8 fade-up blog-content">
+                    <p>Why traditional hard drive shredding machines aren't sufficient for modern SSD structural destruction. Standard shredders leave data-bearing memory chips intact, posing a massive security risk.</p>
+                    <h2>Micro-Shredding Requirements</h2>
+                    <p>To safely destroy an SSD, organizations must utilize micro-shredding technology that reduces the drive to 2mm particles, completely pulverizing the individual NAND flash chips.</p>
+                    <h2>Cryptographic Erasure</h2>
+                    <p>Alternatively, certified cryptographic wiping to NIST 800-88 Purge standards allows the drive to be reused safely, preserving its environmental and financial value.</p>
+                    
+                    <div class="glass-panel mt-5">
+                        <h4 class="mb-3">Subscribe for ITAD Policy Updates</h4>
+                        <form class="d-flex gap-2">
+                            <input type="email" class="form-control mb-0" placeholder="Corporate Email">
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -154,3 +136,4 @@
     <script src="assets/js/main.js"></script>
 </body>
 </html>
+

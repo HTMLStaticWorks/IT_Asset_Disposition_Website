@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Industries | ITAD Core</title>
@@ -14,15 +15,35 @@
             <a href="index.html" class="navbar-brand">
                 <i class="bi bi-shield-lock-fill"></i> ITAD Core
             </a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="industries.html">Industries</a></li>
-                <li><a href="process.html">Process</a></li>
-                <li><a href="case-studies.html">Case Studies</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+            <button id="mobile-menu-btn" class="d-none" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">Home <i class="bi bi-chevron-down ms-1" style="font-size:0.8rem;"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Home 1</a></li>
+                            <li><a href="home-2.html">Home 2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="industries.html">Industries</a></li>
+                    <li><a href="case-studies.html">Case Studies</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="dashboard.html"><i class="bi bi-clipboard-data"></i> Dashboard</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <i class="bi bi-moon"></i>
+                    </button>
+                    <a href="login.html" class="btn btn-outline" style="padding: 8px 20px;">Login</a>
+                    <a href="signup.html" class="btn btn-primary" style="padding: 8px 20px;">Sign Up</a>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -66,11 +87,85 @@
                 </div>
             </div>
         </div>
+    <section class="section-padding bg-surface border-top">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <h2 class="section-title">Our Secure Process</h2>
+                <p class="text-muted mx-auto mt-3" style="max-width: 700px;">A transparent, audited chain of custody ensuring complete data security from start to finish.</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6 fade-up">
+                    <div class="process-card p-4 h-100 bg-background border rounded-4 shadow-sm">
+                        <div class="step-number mb-3">01</div>
+                        <h3>Assessment & Logistics</h3>
+                        <p class="text-muted mb-3">We coordinate asset collection using GPS-tracked, secure logistics vehicles. Assets are scanned on-site for initial custody documentation.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up" data-delay="0.1">
+                    <div class="process-card p-4 h-100 bg-background border rounded-4 shadow-sm">
+                        <div class="step-number mb-3">02</div>
+                        <h3>Secure Intake & Auditing</h3>
+                        <p class="text-muted mb-3">Upon arrival at our ISO-certified processing facility, items undergo a rigorous secondary audit to match the manifest and enter our tracking portal.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up" data-delay="0.2">
+                    <div class="process-card p-4 h-100 bg-background border rounded-4 shadow-sm">
+                        <div class="step-number mb-3">03</div>
+                        <h3>Data Destruction</h3>
+                        <p class="text-muted mb-3">All media is wiped to NIST 800-88 specifications. Drives failing wipe procedures are physically shredded.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up" data-delay="0.3">
+                    <div class="process-card p-4 h-100 bg-background border rounded-4 shadow-sm">
+                        <div class="step-number mb-3">04</div>
+                        <h3>Yield & Reporting</h3>
+                        <p class="text-muted mb-3">Viable assets are remarketed globally. You receive a final report containing Certificates of Destruction and financial return statements.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <footer class="footer">
         <div class="container">
-            <p class="text-white-50">&copy; 2026 ITAD Core.</p>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <a href="index.html" class="navbar-brand text-white mb-3 d-inline-block">
+                        <i class="bi bi-shield-lock-fill"></i> ITAD Core
+                    </a>
+                    <p class="text-white-50 mt-3 pe-4">Global leader in secure enterprise IT asset disposition, data
+                        destruction, and compliance-driven electronic recycling.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="service-data-destruction.html">Data Destruction</a></li>
+                        <li><a href="service-value-recovery.html">Value Recovery</a></li>
+                        <li><a href="service-ewaste-recycling.html">e-Waste Recycling</a></li>
+                        <li><a href="service-decommissioning.html">Decommissioning</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4">
+                    <h4>Newsletter</h4>
+                    <p class="text-white-50">Stay up to date with compliance changes.</p>
+                    <form class="d-flex gap-2 mt-3" onsubmit="event.preventDefault();">
+                        <input type="email" class="form-control mb-0" placeholder="Email Address" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom text-white-50">
+                <p>&copy; 2026 ITAD Core. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
