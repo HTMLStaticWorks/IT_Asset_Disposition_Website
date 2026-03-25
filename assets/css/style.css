@@ -524,6 +524,15 @@ a:hover {
   margin-bottom: 1.5rem;
 }
 
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
 /* Certifications Panel */
 .cert-panel {
   display: flex;
@@ -839,5 +848,31 @@ a:hover {
   .btn {
     padding: 10px 20px;
     font-size: 0.9rem;
+  }
+  .auth-links {
+    flex-wrap: nowrap !important;
+  }
+  .auth-links label,
+  .auth-links a {
+    font-size: 0.75rem !important;
+    white-space: nowrap;
+  }
+}
+
+/* Tablet refinements for footer newsletter */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .footer form.d-flex {
+    flex-wrap: nowrap !important;
+  }
+  .footer form.d-flex .form-control {
+    flex: 3 !important;
+    min-width: 0;
+  }
+  .footer form.d-flex .btn {
+    flex: 1 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    white-space: nowrap;
+    font-size: 0.85rem;
   }
 }
