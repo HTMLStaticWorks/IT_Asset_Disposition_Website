@@ -21,14 +21,14 @@ document.addEventListener('DOMContentLoaded', () => {
             htmlElement.setAttribute('lang', 'ar'); // Default to Arabic for RTL testing
             localStorage.setItem('rtl', 'true');
             if (rtlToggleBtn) {
-                rtlToggleBtn.innerHTML = '<i class="bi bi-translate"></i> LTR';
+                rtlToggleBtn.innerHTML = 'LTR';
             }
         } else {
             htmlElement.setAttribute('dir', 'ltr');
             htmlElement.setAttribute('lang', 'en');
             localStorage.setItem('rtl', 'false');
             if (rtlToggleBtn) {
-                rtlToggleBtn.innerHTML = '<i class="bi bi-translate"></i> RTL';
+                rtlToggleBtn.innerHTML = 'RTL';
             }
         }
     }
