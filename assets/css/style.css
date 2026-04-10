@@ -774,6 +774,11 @@ a:hover {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
+.btn-social.apple:hover {
+  background: #000 !important;
+  color: #fff !important;
+  border-color: #000 !important;
+}
 .btn-social i, .btn-social svg {
   flex-shrink: 0;
 }
