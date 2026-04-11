@@ -144,10 +144,8 @@
         </ul>
         <div class="sidebar-footer">
             <div class="d-flex gap-2 mb-3 justify-content-center">
-                <button id="rtl-toggle" class="btn btn-outline py-2 px-3" style="font-size: 0.9rem;">RTL</button>
-                <button id="theme-toggle" class="btn btn-outline py-2 px-3">
-                    <i class="bi bi-moon"></i>
-                </button>
+                <button id="rtl-toggle" class="nav-btn-icon" aria-label="Toggle RTL Support"><i class="bi bi-translate"></i></button>
+                <button id="theme-toggle" class="nav-btn-icon" aria-label="Toggle Theme"><i class="bi bi-moon"></i></button>
             </div>
             <a href="login.html" class="logout-btn">
                 <i class="bi bi-box-arrow-right"></i> Logout
@@ -392,20 +390,11 @@
                 }
             });
 
-            // Handle RTL label (simple toggle)
-            const rtlBtn = document.getElementById('rtl-toggle');
-            if (rtlBtn) {
-                rtlBtn.addEventListener('click', () => {
-                    setTimeout(() => {
-                        const isRTL = document.documentElement.getAttribute('dir') === 'rtl';
-                        rtlBtn.innerHTML = isRTL ? 'LTR' : 'RTL';
-                    }, 50);
-                });
-            }
         });
     </script>
 </body>
 </html>
+
 
 
 

@@ -21,14 +21,15 @@ document.addEventListener('DOMContentLoaded', () => {
             htmlElement.setAttribute('lang', 'ar'); // Default to Arabic for RTL testing
             localStorage.setItem('rtl', 'true');
             if (rtlToggleBtn) {
-                rtlToggleBtn.innerHTML = 'LTR';
+                // Keep the icon, maybe add a class for styling if needed
+                rtlToggleBtn.classList.add('active');
             }
         } else {
             htmlElement.setAttribute('dir', 'ltr');
             htmlElement.setAttribute('lang', 'en');
             localStorage.setItem('rtl', 'false');
             if (rtlToggleBtn) {
-                rtlToggleBtn.innerHTML = 'RTL';
+                rtlToggleBtn.classList.remove('active');
             }
         }
     }

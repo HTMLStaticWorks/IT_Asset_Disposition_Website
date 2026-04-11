@@ -26,11 +26,11 @@
             </div>
             <form onsubmit="event.preventDefault();">
                 <div class="row g-3">
-                    <div class="col-md-6 mb-1">
+                    <div class="col-md-12 mb-1">
                         <label class="form-label text-muted fw-bold d-block mb-1">First Name</label>
                         <input type="text" class="form-control" placeholder="John" required>
                     </div>
-                    <div class="col-md-6 mb-1">
+                    <div class="col-md-12 mb-1">
                         <label class="form-label text-muted fw-bold d-block mb-1">Last Name</label>
                         <input type="text" class="form-control" placeholder="Doe" required>
                     </div>
@@ -99,10 +99,9 @@
         </div>
     </div>
 
-    <div class="fixed-bottom p-3 d-flex justify-content-end align-items-center bg-transparent">
-        <button id="theme-toggle" class="btn btn-outline border-0 bg-transparent text-muted" aria-label="Toggle Theme">
-            <i class="bi bi-moon"></i>
-        </button>
+    <div class="fixed-bottom p-3 d-flex justify-content-end align-items-center gap-2 bg-transparent">
+        <button id="rtl-toggle" class="nav-btn-icon" aria-label="Toggle RTL Support"><i class="bi bi-translate"></i></button>
+        <button id="theme-toggle" class="nav-btn-icon" aria-label="Toggle Theme"><i class="bi bi-moon"></i></button>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -116,6 +115,7 @@
 </body>
 
 </html>
+
 
 
 
